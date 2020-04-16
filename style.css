@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+html{    
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0 auto;  
+    
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.porratoda{
+    display: flex;
+    height: 100vh;   
+}
+
+.logo{
+    margin-top:50px;
+}
+
+.azul{
+    
+    background-image: url(./img/azul.jfif);
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+
+}
+ .sumario{
+    margin-bottom:50px;
+}
+
+.sumario >li{
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-decoration-line: underline;
+}
+
+.branco{    
+    width: 60%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.linhas> img{
+    width: 75vw;
+    margin-top:100px;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    margin:50px 100px;
+    text-align: center;       
+}
+
+.localnews{
+    margin:50px;    
+}
+.texto-noticias{
+   font-size:13px;
+}
+
+.localnews > span{
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+@media(max-width: 850px){
+    .title{
+        font-size: 40px;
+    }
+}
+
+
+@media(max-width: 690px){
+    .title{
+        font-size: 30px;
+    }
+
+    .porratoda{
+    display: block;
+    }
+    
+    .azul{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .linhas> img{
+        display: none;
+        height: 0;
+    }
+
+    .branco{
+        width: 100%;
+    }
+
+
+}
